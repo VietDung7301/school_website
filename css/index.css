@@ -1,0 +1,253 @@
+/* ===== Slide show ===== */
+.mySlides {display: none;}
+
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+.slideshow-active {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 4s;
+}
+
+@keyframes fade {
+    0%, 100% {opacity: .0}
+    5%, 95% {opacity: 0.8}
+    10%, 90% {opacity: 1}
+}
+@-webkit-keyframes fade {
+    0%, 100% {opacity: .0}
+    5%, 95% {opacity: 0.8}
+    10%, 90% {opacity: 1}
+}
+
+#slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slogan {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: #fff;
+    text-shadow: 2px 2px 3px #333;
+}
+
+.slogan h2 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+    font-size: 60px;
+}
+
+.slogan h3 {
+    font-size: 20px;
+    line-height: 40px;
+    text-shadow: 0px 0px 3px #333;
+}
+
+
+
+
+
+
+/* ===== About us ===== */
+.about-container {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.about-link-group-list {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-link-group-item {
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.item-container {
+    padding: 0px 40px 40px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+.item-img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.item-btn {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-link-group-item .item-btn {
+    background-color: #c02135;
+    position: relative;
+    height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.about-link-group-item:hover .item-btn {
+    opacity: 0.9;
+}
+
+.about-link-group-item .item-img img {   
+    transition: all 0.3s ease-in-out;
+}
+.about-link-group-item:hover .item-img img {   
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* ===== News ===== */
+.news-container {
+    background-color: transparent;
+    padding: 0px 100px 80px 100px;
+}
+
+.news-item {
+    height: 450px;
+    padding: 20px;
+    z-index:5;
+}
+
+.news-item-container {
+    height: 100%;
+}
+
+.news-item-img {
+    height: 265px;
+    width: 100%;
+    overflow: hidden;
+}
+.news-item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.news-item-text {
+    display: block;
+    height: 185px;
+    padding: 40px;
+    background-color: #fff;
+    position: relative;
+}
+.news-item-text h2 {
+    display: block;
+    color: #b42025;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.news-item-text h3 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: normal;
+    color: #4e4e4e;
+    outline: none;
+}
+.news-item-text .date-published {
+    display: inline-block;
+    position: absolute;
+    top: -45px;
+    right: 15px;
+    width: 70px;
+    height: 90px;
+    background-color: #b41d24;
+    padding: 20px 5px;
+    text-align: center;
+    color: #fff;
+    z-index: 100px;
+}
+.date-published span:first-child {
+    font-size: 17px;
+    font-weight: 600;
+}
+.date-published span:last-child {
+    font-size: 21px;
+    text-transform: uppercase;
+}
+.news-item img {
+    transition: all 0.3s ease-in-out;
+}
+
+.news-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+/* ===== Contacts ===== */
+.contact-infor {
+    padding: 30px 40px;
+    margin: 0px 100px 50px 100px ;
+    background-color: #fff;
+    box-shadow: 0 0px 3px 2px rgb(0 0 0 / 30%);
+    display: flex;
+}
+
+.contact-img {
+    height: 250px;
+}
+.contact-img img {
+    height: 100%;
+    width: auto;
+}
+
+.contact-content {
+    padding: 20px 60px;
+}
+.contact-content h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #c02135;
+    margin-bottom: 30px;
+}
+.contact-content h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.contact-content img {
+    height: 20px;
+    width: auto;
+    margin: 30px 10px;
+}
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    border: 1px solid #c02135;
+    box-shadow: 2px 2px 3px 1px rgb(0 0 0 / 20%);
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+.contact-btn:hover {
+    background-color: #ddd;
+}
